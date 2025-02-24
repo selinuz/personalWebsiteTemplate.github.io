@@ -1,15 +1,11 @@
 /* Edit here to change the color scheme */
 :root {
-  --primary-color: #4a90e2;
-  --secondary-color: #333;
-  --background-color: #f4f4f4;
-  --text-color: #222;
-  --accent-color: #ff6600;
-  --hover-color: #555;
-  --button-color: #4caf50;
-  --button-hover-color: #337d37;
-  --icon-color: #ff6600;
-  --font-family: "Arial, sans-serif";
+  --primary-color: #4a90e2; /* Main color for buttons and links */
+  --secondary-color: #333; /* Background color for navigation and footer */
+  --background-color: #f4f4f4; /* Main background color */
+  --text-color: #222; /* Default text color */
+  --hover-color: #555; /* Hover effect color */
+  --font-family: "Inter", sans-serif; /* Custom font */
 }
 
 /* General styling */
@@ -22,7 +18,7 @@ body {
   color: var(--text-color);
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -54,7 +50,7 @@ nav ul li a:hover {
 .resume-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--button-color);
+  background-color: var(--primary-color);
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -63,14 +59,59 @@ nav ul li a:hover {
 }
 
 .resume-button:hover {
-  background-color: var(--button-hover-color);
+  background-color: var(--hover-color);
 }
 
 /* Sections */
 section {
   padding: 50px;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+}
+
+/* Projects Section */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+/* Work Experience Section */
+.work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-item h3 {
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.work-item p {
+  margin: 5px 0;
 }
 
 /* Contact Section */
@@ -105,8 +146,8 @@ footer {
   color: white;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -114,5 +155,9 @@ footer {
 
   nav ul li {
     margin: 10px 0;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
   }
 }
