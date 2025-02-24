@@ -1,6 +1,6 @@
 ## About
 
-This template was created for the Linked and Launched Workshop by Women in Computer Science at UBC to help students quickly set up a personal website. A personal website is more than just a portfolio—it reflects your identity, projects, and interests beyond LinkedIn and resumes.
+This template was created for the Linked & Launch Workshop by [Women in Computer Science at UBC](https://ubcwics.com) to help students quickly set up a personal website. A personal website is more than just a portfolio—it reflects your identity, projects, and interests beyond LinkedIn and resumes.
 
 Check out the template here: https://selinuz.github.io/personalWebsiteTemplate.github.io/
 
@@ -12,7 +12,7 @@ Check out the template here: https://selinuz.github.io/personalWebsiteTemplate.g
 git clone https://github.com/selinuz/personalWebsiteTemplate.github.io.git
 ```
 
-**Important:** Rename the repository to `your-username.github.io` for GitHub Pages to work correctly.
+**Important:** Rename the repository to `your-github-username.github.io` for GitHub Pages to work correctly.
 
 ### 2. Customize Your Site
 
@@ -23,11 +23,11 @@ git clone https://github.com/selinuz/personalWebsiteTemplate.github.io.git
 ### 3. Deploy to GitHub Pages
 
 - Push your changes to GitHub.
-- Go to **Settings > Pages**.
+- Go to **Settings > Pages** in project.
 - Under "Source", select the branch you want to use (e.g., `main` or `master`).
 - Click **Save**.
 
-Your site will be live at `https://your-username.github.io`.
+Your site will be live at `https://your-github-username.github.io`.
 
 ## Next Steps
 
