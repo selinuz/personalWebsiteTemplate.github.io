@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="assets/resume.pdf" download class="resume-button">Resume</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Hi! This is a template to get you started on your personal website. Edit
+        this section with your information, such as a short bio, your interests,
+        and what you do.
+      </p>
+      <p>
+        This template was created for the Linked and Launched event organized by
+        Women in Computer Science at UBC.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>
+          A simple and elegant personal portfolio website to showcase my work
+          and experience. Built using HTML, CSS, and JavaScript.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Task Manager App</h3>
+        <p>
+          A web-based task management tool that helps users stay organized and
+          productive.
+        </p>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Work Experience</h2>
+      <p>
+        Software Engineer at Tech Company - Worked on front-end and back-end
+        development for scalable web applications.
+      </p>
+      <p>
+        Intern at Startup - Developed features for a mobile application and
+        improved UI/UX.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/janedoe" target="_blank">
+          <img src="assets/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/janedoe" target="_blank">
+          <img src="assets/github.svg" alt="GitHub" />
+        </a>
+        <a href="mailto:janedoe@example.com">
+          <img src="assets/mail.svg" alt="Email" />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> UBC WiCS</p>
+      <p>Template created with ChatGPT for Linked and Launched Workshop</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
